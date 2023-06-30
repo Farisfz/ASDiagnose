@@ -4,11 +4,7 @@ Flask-Login==0.6.0
 Flask-SQLAlchemy==2.5.1
 Flask-WTF==1.0.1
 fonttools==4.25.0
-greenlet==1.1.2
 gunicorn==20.1.0
-itsdangerous==2.1.2
 pandas==1.4.4
 SQLAlchemy==1.4.35
 sqlparse==0.4.2
-torch==2.0.1
-torchvision==0.15.2
