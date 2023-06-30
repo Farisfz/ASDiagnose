@@ -15,7 +15,7 @@ db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'thisisasecretkey'
-model = pickle.load(open('prediction_system/model.pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 login_manager = LoginManager()
 login_manager.init_app(app)
