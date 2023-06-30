@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Results</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/styleyes.css') }}" />
+
+</head>
+
+<body>
+
+	<div id="notfound">
+		<div class="notfound">
+			<div class="notfound-40">
+				<img src="static/image/caution.png" alt="caution" class="center">
+			</div>
+			<h2>High probability</h2>
+			<p>Based on the results of the screening test, it's possible that your child may have autism, and it would be helpful to consult a professional for further evaluation and guidance.</p>
+			<a href="{{ url_for('menu') }}">HOME</a>
+			<a href="{{ url_for('contact') }}">CONSULT</a>
+		</div>
+	</div>
+
+</body>
+</html>

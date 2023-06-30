@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/prelogin.css') }}" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+          <div class="header">
+            <h2 class="animation a1">Welcome To ASDiagnose</h2>
+            <h4 class="animation a2">Thankyou for visiting ASDiagnose</h4>
+          </div>
+
+        <form action="{{ url_for('register') }}">
+            <div class="form">
+              <button class="animation a6" type="submit">REGISTER</button>
+            </div>
+        </form>
+  
+        <form action="{{ url_for('login') }}">
+              <div class="form">
+                <button class="animation a6" type="submit">LOGIN</button>
+              </div>
+        </form>
+
+        </div>
+        <div class="right"></div>
+      </div>
+</body>
+
+</html>

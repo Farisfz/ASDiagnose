@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/prescreen.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/screennav.css') }}" />
+    <title>Screening</title>
+</head>
+
+<body>
+    <br>
+    <div class="nav">
+        <input type="checkbox">
+          <span></span>
+          <span></span>
+          <div class="menu">
+            <li><a href="{{ url_for('menu') }}">Home</a></li>
+            <li><a href="{{ url_for('dash') }}">Dashboard</a></li>
+            <li><a style="color:rgb(200, 200, 200);" href="{{ url_for('prescreen') }}">Diagnosis</a></li>
+            <li><a href="{{ url_for('contact') }}">Learn</a></li>
+          </div>
+      </div>
+      <br>
+    <div class= 'container'>
+        <div class="container_content">
+        <div class="container_content_inner">
+        <div class="title">
+          <h1>Screening Test for Toddlers</h1>
+        </div>
+        <div class="par">
+        <p>
+            This test is a screening tool for toddlers age 36 months and below. It is designed to identify children who may benefit from a more thorough developmental and autism evaluation. <br>It is important to note that the screening test may not detect early signs of autism and developmental delay in all children. If you have concerns about your child, talk to your pediatrician.
+        </p>
+        </div>
+
+        <form action="{{ url_for('screen') }}">
+            <div class="btns">
+                <button class='btns_more'>take the test</button>
+            </div>
+        </form>
+
+        </div>
+        </div>
+         <div class="container_outer_img">
+         <div class="img-inner">
+         <img src='https://cdn.mdedge.com/files/s3fs-public/Girl_Mom_Doc_web.jpg'  alt="" class="container_img"/>
+               </div>
+             </div>
+          </div>
+        <div class="overlay"></div>
+</body>
+
+</html>

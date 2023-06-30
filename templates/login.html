@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+          <div class="header">
+            <h2 class="animation a1">Welcome Back</h2>
+            <h4 class="animation a2">Log in to your account using username and password</h4>
+          </div>
+
+          <form method="POST" action="">
+          <div class="form">
+                {{ form.hidden_tag() }}
+                {{ form.username(class="form-field animation a3") }}
+                {{ form.password(class="form-field animation a4") }}
+                <p class="animation a5"><a href="{{ url_for('register') }}">Register</a></p>
+                <button class="animation a6" type="submit">LOGIN</button>
+          </div>
+        </form>
+        </div>
+        <div class="right"></div>
+      </div>
+</body>
+
+</html>
