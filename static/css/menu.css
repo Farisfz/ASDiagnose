@@ -10,6 +10,7 @@ body {
   /* https://imgtr.ee/images/2023/06/11/KcrNb.png */
   overflow: hidden;
   background-size: 100% 100%;
+  animation: transitionIn 1.5s;
 }
 
 nav {
@@ -122,4 +123,17 @@ nav a:nth-child(3):hover ~ #indicator {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+@keyframes transitionIn {
+
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+
+    to {
+      opacity: 1;
+      transition: rotate(0);
+    }
 }

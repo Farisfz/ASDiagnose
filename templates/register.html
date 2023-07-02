@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='image/icon.ico') }}"/>
     <title>ASDiagnose | Register</title>
 </head>
 
@@ -14,7 +15,7 @@
         <div class="left">
           <div class="header">
             <h2 class="animation a1">Welcome to ASDiagnose</h2>
-            <h4 class="animation a2">Register your account using username and password</h4>
+            <h4 class="animation a2">Register your account</h4>
           </div>
 
           <form method="POST" action="">
@@ -23,7 +24,7 @@
                 {{ form.username(class="form-field animation a3") }}
                 {{ form.email(class="form-field animation a4") }}
                 {{ form.password(class="form-field animation a4") }}
-                <p class="animation a5"><a href="{{ url_for('login') }}">Login</a></p>
+                <p class="animation a5"><a>Already have an account? </a><a href="{{ url_for('login') }}">Login</a></p>
                 <button class="animation a6" type="submit">REGISTER</button>
           </div>
         </form>

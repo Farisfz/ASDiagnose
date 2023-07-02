@@ -14,8 +14,8 @@
     <div class="container">
         <div class="left">
           <div class="header">
-            <h2 class="animation a1">Welcome Back</h2>
-            <h4 class="animation a2">Log in to your account using username and password</h4>
+            <h2 class="animation a1">Welcome | ASDiagnose</h2>
+            <h4 class="animation a2">Log in to your account</h4>
           </div>
 
           <form method="POST" action="">
@@ -23,7 +23,7 @@
                 {{ form.hidden_tag() }}
                 {{ form.username(class="form-field animation a3") }}
                 {{ form.password(class="form-field animation a4") }}
-                <p class="animation a5"><a href="{{ url_for('register') }}">Register</a></p>
+                <p class="animation a5"><a>Don't have an account? </a><a href="{{ url_for('register') }}">Register</a></p>
                 <button class="animation a6" type="submit">LOGIN</button>
           </div>
         </form>

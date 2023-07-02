@@ -7,6 +7,7 @@
 	padding: 0;
 	margin: 0;
 	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	animation: transitionIn 1.5s;
   }
   
   #notfound {
@@ -101,6 +102,19 @@
 	width: 150%;
 	height: 200%;
   }
+
+  @keyframes transitionIn {
+
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+
+    to {
+      opacity: 1;
+      transition: rotate(0);
+    }
+}
 
  /* ==================================================== NAVIGATION ================================ */
 
