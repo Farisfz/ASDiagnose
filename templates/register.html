@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}" />
-    <title>Login</title>
+    <title>ASDiagnose: Register</title>
 </head>
 
 <body>
@@ -21,6 +21,7 @@
           <div class="form">
                 {{ form.hidden_tag() }}
                 {{ form.username(class="form-field animation a3") }}
+                {{ form.email(class="form-field animation a4") }}
                 {{ form.password(class="form-field animation a4") }}
                 <p class="animation a5"><a href="{{ url_for('login') }}">Login</a></p>
                 <button class="animation a6" type="submit">REGISTER</button>

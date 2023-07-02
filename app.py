@@ -29,11 +29,15 @@ def load_user(user_id):
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), nullable=False, unique=True)
+    email = db.Column(db.String(40), nullable=False)
     password = db.Column(db.String(80), nullable=False)
 
 class RegisterForm(FlaskForm):
     username = StringField(validators=[
                            InputRequired(), Length(min=4, max=20)], render_kw={"placeholder": "Username"})
+    
+    email = StringField(validators=[
+                           InputRequired(), Length(min=4, max=20)], render_kw={"placeholder": "Email"})
 
     password = PasswordField(validators=[
                              InputRequired(), Length(min=8, max=20)], render_kw={"placeholder": "Password"})
@@ -90,7 +94,7 @@ def register():
 
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        new_user = User(username=form.username.data, password=hashed_password)
+        new_user = User(username=form.username.data, email=form.email.data, password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
         return redirect(url_for('login'))
