@@ -10,7 +10,6 @@ body {
   /* https://imgtr.ee/images/2023/06/11/KcrNb.png */
   overflow: hidden;
   background-size: 100% 100%;
-  animation: transitionIn 1.5s;
 }
 
 nav {
@@ -137,3 +136,18 @@ nav a:nth-child(3):hover ~ #indicator {
       transition: rotate(0);
     }
 }
+
+.preloader {
+  background: #E3F4FD url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/719dd913765711.56277de0efec9.gif') no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  transition: opacity 0.75s, visibility 0.72s;
+}
+
+.preloader-hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+

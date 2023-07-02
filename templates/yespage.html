@@ -19,6 +19,7 @@
 </head>
 
 <body>
+	<div class="preloader"></div>
 
 	<div id="notfound">
 		<div class="notfound">
@@ -31,6 +32,18 @@
 			<a href="{{ url_for('contact') }}">CONSULT</a>
 		</div>
 	</div>
+
+	<script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".preloader");
+
+            setTimeout(function(){
+                loader.classList.add("preloader-hidden");
+                loader.addEventListener("transitionend", () =>{
+                document.body.removeChild("preloader")})
+            },2000)
+        })
+    </script>
 
 </body>
 </html>
