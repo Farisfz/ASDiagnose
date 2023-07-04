@@ -76,7 +76,7 @@
 	font-family: 'Cabin', sans-serif;
 	display: inline-block;
 	padding: 10px 25px;
-	background-color: #8f8f8f;
+	background-color: #0A5484;
 	border: none;
 	border-radius: 40px;
 	color: #fff;
@@ -89,7 +89,7 @@
   }
   
   .notfound a:hover {
-	background-color: #2c2c2c;
+	background-color: #8f8f8f;
   }
   
   .center {
@@ -121,7 +121,7 @@
 	width: 100%;
 	position: fixed;
 	z-index: 100;
-	transition: opacity 0.75s, visibility 0.72s;
+	transition: opacity 0.75s, visibility 0.75s;
   }
   
   .preloader-hidden{
