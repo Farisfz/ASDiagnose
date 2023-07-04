@@ -70,13 +70,13 @@
     width: 150px;
     overflow: hidden;
   }
-  
+
   .btns_more {
-    background: transparent;
-    border: 1px solid var(--contrast-color);
+    background-color: #2A315C; 
+    color:#E0E9EE;
+    border: 2px solid var(--contrast-color);
     border-radius: 50px;
     padding: 8px 12px;
-    color: #2A315C;
     font-size: 16px;
     text-transform: uppercase;
     position: relative;
@@ -84,6 +84,11 @@
     outline: none;
     transform: translateY(50px);
     animation: slideUp .8s ease-in-out  forwards 1s;
+  }
+
+  .btns_more:hover{
+    background: transparent;
+    color: #2A315C;
   }
   
   .title {

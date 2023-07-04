@@ -11,7 +11,8 @@ body {
 	font-family: Montserrat, sans-serif;
 	margin: 0;
 	background-color: #E0E9EE;
-	animation: transitionIn 1.75s;
+	animation: slidefade 1s;
+	
 }
 
 p {
@@ -113,15 +114,13 @@ h3::before {
 	background-color: #8f8f8f;
   }
 
-  @keyframes transitionIn {
-
-    from {
-      opacity: 0;
-      transform: rotateX(-10deg);
+  @keyframes slidefade {
+    0% {
+	  opacity: 0;
+      transform: translateY(300px);
     }
-
-    to {
-      opacity: 1;
-      transition: rotate(0);
+    100% {
+	  opacity: 1;
+      transform: translateY(0px);
     }
-}
+  }
