@@ -12,6 +12,9 @@ body {
 	margin: 0;
 	background-color: #E0E9EE;
 	animation: slidefade 1s;
+	/* background-image: url("https://cutewallpaper.org/27x/o8vfxi0nx/1560121985.jpg");
+	background-size: 100% */
+	background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 	
 }
 
