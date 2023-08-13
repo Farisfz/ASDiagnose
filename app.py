@@ -12,8 +12,8 @@ import pickle
 #Initialize the flask App
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://bkyrqdrxqscpnt:5453556ab4cfbacf0cf14eb445a76a11b5dcf9f5726672e60c3829f0ff2acb6d@ec2-3-214-103-146.compute-1.amazonaws.com:5432/d45ni0ev5ueu9m'
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://bkyrqdrxqscpnt:5453556ab4cfbacf0cf14eb445a76a11b5dcf9f5726672e60c3829f0ff2acb6d@ec2-3-214-103-146.compute-1.amazonaws.com:5432/d45ni0ev5ueu9m'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SECRET_KEY'] = 'thisisasecretkey'
 db = SQLAlchemy(app)
 model = pickle.load(open('model.pkl', 'rb'))
