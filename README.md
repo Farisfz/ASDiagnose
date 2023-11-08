@@ -15,7 +15,7 @@ System Name: ASDiagnose
 - Dataset: https://www.kaggle.com/datasets/fabdelja/autism-screening-for-toddlers
 - Data Visualization using Tableau: https://public.tableau.com/app/profile/faris.fauzi/viz/ASDiagnose2
 - ML model export from jupyter notebook (Pickle)
-- Classifier used: Random Forest
+- Classifier used: Linear Regression
 - Acccuracy 96%
 - Web App development using Flask
 - HTML/CSS/Python
