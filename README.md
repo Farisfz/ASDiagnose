@@ -2,7 +2,7 @@
 System Name: ASDiagnose
 <br>Data Visualization & Prediction system to screen Autism Spectrum Disorder traits among toddlers.
 - Data Visualization Dashboard about Autism Spectrum Disorder cases
-- User have to answer several questions regarding toddler's behaviour and background for doing prediction
+- User have to answer several questions regarding toddler's behaviour and background to predict
 - The system will then display if the toddler has high or low probability of having ASD traits
 
 # App Function
