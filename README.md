@@ -19,4 +19,4 @@ System Name: ASDiagnose
 - Acccuracy 96%
 - Web App development using Flask
 - HTML/CSS/Python
-- Database Eng: PostgreSQL
+- Database: PostgreSQL
